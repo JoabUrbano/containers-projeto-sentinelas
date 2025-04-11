@@ -1,0 +1,21 @@
+services:
+  mariadb:
+    image: joab23urbano/mariadb-sentinelas
+    container_name: mariadb-sentinelas
+    ports:
+      - "3306:3306"
+    restart: always
+
+  portainer:
+    image: joab23urbano/portainer-sentinelas
+    container_name: portainer-sentinelas
+    ports:
+      - "9000:9000"
+    restart: always
+
+  grafana:
+    image: joab23urbano/grafana-sentinelas
+    container_name: grafana-sentinelas
+    ports:
+      - "3000:3000"
+    restart: always
