@@ -6,10 +6,11 @@ USE sentinelas;
 CREATE TABLE IF NOT EXISTS `tb_avistagem_deteccao` (
 	`id` int AUTO_INCREMENT NOT NULL UNIQUE,
 	`expedicao` varchar(255) NOT NULL,
-	`numero` int NOT NULL,
+	`pernada` varchar(255) NOT NULL,
 	`navio` varchar(255) NOT NULL,
 	`data` timestamp NOT NULL,
 	`registro` varchar(255) NOT NULL,
+	`tipo_som` varchar(255) NOT NULL,
 	`especie` varchar(255) NOT NULL,
 	`nome_comum` varchar(255) NOT NULL,
 	`latitude` float NOT NULL,
@@ -20,4 +21,3 @@ CREATE TABLE IF NOT EXISTS `tb_avistagem_deteccao` (
 	`tamanho_grupo_maximo` int NOT NULL,
 	PRIMARY KEY (`id`)
 );
-
